@@ -73,8 +73,9 @@ export default function AnimatedBook() {
           });
         }
       } else {
-        // Cursor jauh - tutup buku dan lanjutkan rotasi
-        if (isHovering) {
+        //Cursor jauh - tutup buku dan lanjutkan rotasi buku
+        if (isHovering) 
+        {
           setIsHovering(false);
           gsap.to(leftPagesRef.current, {
             rotateY: 0,
@@ -87,16 +88,15 @@ export default function AnimatedBook() {
             ease: 'power2.out'
           });
 
-          // Resume spinning
+          //resume spinning
           setTimeout(() => {
             if (rotationAnimRef.current) {
               rotationAnimRef.current.resume();
             }
-          }, 1000);
+          }, 1000)
         }
       }
-    };
-
+    }
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
