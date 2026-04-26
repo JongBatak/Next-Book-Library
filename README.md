@@ -136,10 +136,3 @@ Contributions are welcome. Suggested steps:
 
 ## License
 See [LICENSE](LICENSE) for license information.
-
----
-
-If you'd like, I can also:
-- Add local logo SVGs under `public/logos/` and update the README to reference them
-- Create example Postman collection for the API
-- Add a simple script to seed the DB without hitting the HTTP route
